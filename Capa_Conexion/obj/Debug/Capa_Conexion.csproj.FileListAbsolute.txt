@@ -1,0 +1,11 @@
+D:\Programacion C#\Modelos en Capas\Proyecto Base Datos 2019\API_Conexion_BaseDatos\Capa_Conexion\bin\Debug\Capa_Conexion.dll
+D:\Programacion C#\Modelos en Capas\Proyecto Base Datos 2019\API_Conexion_BaseDatos\Capa_Conexion\bin\Debug\Capa_Conexion.pdb
+D:\Programacion C#\Modelos en Capas\Proyecto Base Datos 2019\API_Conexion_BaseDatos\Capa_Conexion\obj\Debug\Capa_Conexion.csprojAssemblyReference.cache
+D:\Programacion C#\Modelos en Capas\Proyecto Base Datos 2019\API_Conexion_BaseDatos\Capa_Conexion\obj\Debug\Capa_Conexion.csproj.CoreCompileInputs.cache
+D:\Programacion C#\Modelos en Capas\Proyecto Base Datos 2019\API_Conexion_BaseDatos\Capa_Conexion\obj\Debug\Capa_Conexion.dll
+D:\Programacion C#\Modelos en Capas\Proyecto Base Datos 2019\API_Conexion_BaseDatos\Capa_Conexion\obj\Debug\Capa_Conexion.pdb
+D:\Programacion C#\Modelos en Capas\Proyecto Base Datos 2019\API_Conexion_BaseDatos\Capa_Conexion\bin\Debug\Google.Protobuf.dll
+D:\Programacion C#\Modelos en Capas\Proyecto Base Datos 2019\API_Conexion_BaseDatos\Capa_Conexion\bin\Debug\MySql.Data.dll
+D:\Programacion C#\Modelos en Capas\Proyecto Base Datos 2019\API_Conexion_BaseDatos\Capa_Conexion\bin\Debug\Google.Protobuf.xml
+D:\Programacion C#\Modelos en Capas\Proyecto Base Datos 2019\API_Conexion_BaseDatos\Capa_Conexion\bin\Debug\MySql.Data.xml
+D:\Programacion C#\Modelos en Capas\Proyecto Base Datos 2019\API_Conexion_BaseDatos\Capa_Conexion\obj\Debug\Capa_Conexion.csproj.CopyComplete

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F9CFD53-AB0F-453B-8B48-DA9FA70EDE46}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Capa_Presentacion</RootNamespace>
+    <AssemblyName>Capa_Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.Protobuf, Version=3.5.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.5.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmDatos_Generales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatos_Generales.Designer.cs">
+      <DependentUpon>frmDatos_Generales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProcedimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProcedimientos.Designer.cs">
+      <DependentUpon>frmProcedimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSQL_Dinamico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSQL_Dinamico.Designer.cs">
+      <DependentUpon>frmSQL_Dinamico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStringConexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStringConexion.Designer.cs">
+      <DependentUpon>frmStringConexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDatos_Generales.resx">
+      <DependentUpon>frmDatos_Generales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProcedimientos.resx">
+      <DependentUpon>frmProcedimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSQL_Dinamico.resx">
+      <DependentUpon>frmSQL_Dinamico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStringConexion.resx">
+      <DependentUpon>frmStringConexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa_Logica\Capa_Logica.csproj">
+      <Project>{a9b0e5b2-985e-489a-9b8f-890f8973af18}</Project>
+      <Name>Capa_Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.fullscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.fullscreen.box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.section.collapse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.section.collapse.all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.section.expand.all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.section.expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.window.maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.window.minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.window.restore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.database.sql.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.hardware.cpu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.connect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.user.tie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.database.mysql.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.disconnect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.disconnect.pink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.diagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.message.send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_icon-icons.com_70204.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mysqlworkbench_103806.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-mysql-database-php-computer-icons-black-and-white-5acb2a6cb1e948.6495385215232641087287.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486485570-accept-check-ok-success-tick-yes_81155.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1485476044-artboard-1_78532.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cerrar-ventana-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-marca-doble-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delfin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\del.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dolphin1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
